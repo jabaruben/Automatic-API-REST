@@ -38,12 +38,12 @@ Visit [Automatic API REST](http://automaticapirest.info/) to view our demo.
 
 **Note 3: You need to create a .htaccess file inside your root directory with this content:**
 <pre class="lang:php decode:true">
-    <IfModule mod_rewrite.c>
+    &lt;IfModule mod_rewrite.c&gt;
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule api/(.*)$ api.php [QSA,NC,L]
-    </IfModule>
+    &lt;/IfModule&gt;
 </pre>
 
 ## Hello World (GET From PHP)
