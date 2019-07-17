@@ -9,12 +9,15 @@
  */
 
 define("SERVER","localhost");
-define("USER","root");
+define("USER","");
 define("PASS","");
-define("DB","jabapp");
+define("DB","");
 
 define("USERADMIN","admin");
 define("PASSADMIN","admin");
 
-define("SLUGAPI","/Automatic-api-rest");
+// Empty this Constant if your api will be http://localhost/api/....
+// But if your proyect is inside a folder like http://localhost/proyect/api/...
+// you need to set this slugapi constant.
+define("SLUGAPI","/[HERE YOUR SLUG IF IS NECESARY]");
 ?>
