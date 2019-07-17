@@ -9,10 +9,12 @@
  */
 
 define("SERVER","localhost");
-define("USER","");
+define("USER","root");
 define("PASS","");
-define("DB","");
+define("DB","jabapp");
 
 define("USERADMIN","admin");
 define("PASSADMIN","admin");
+
+define("SLUGAPI","/Automatic-api-rest");
 ?>

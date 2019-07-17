@@ -36,6 +36,16 @@ Visit [Automatic API REST](http://automaticapirest.info/) to view our demo.
 
 **Note 2: If you have troubles in localhost with apache, please see this [issue](https://github.com/GeekyTheory/Automatic-API-REST/issues/9).**
 
+**Note 3: You need to create a .htaccess file inside your root directory with this content:**
+<pre class="lang:php decode:true">
+    <IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule api/(.*)$ api.php [QSA,NC,L]
+    </IfModule>
+</pre>
+
 ## Hello World (GET From PHP)
 <pre class="lang:php decode:true">&lt;?php
     //Get JSON from Automatic Api Rest
